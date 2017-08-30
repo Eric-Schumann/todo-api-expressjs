@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>API Documentation</title>
+  </head>
+  <body>
+    <h1>Todo API Documentation</h1>
+    <p>There are three urls you will be working with in this API.
+      <ul>
+        <li><pre>http://localhost/api/todo</pre></li>
+        <li><pre>http://localhost/api/todos</pre></li>
+        <li><pre>http://localhost/api/todos/:todo_id</pre></li>
+      </ul>
+    </p>
+    <h3>The HTTP methods aviailable are below.</h3>
+    <p>
+      <ul>
+        <li>GET
+          <ul>
+            <li>All Todos<pre>http://localhost/api/todos</pre></li>
+            <li>Specific Todo<pre>http://localhost/api/todos/:todo_id</pre>
+          </ul>
+        </li>
+        <li>POST<pre>http://localhost/api/todo</pre></li>
+        <li>PUT<pre>http://localhost/api/todos/:todo_id</pre></li>
+        <li>DELETE<pre>http://localhost/api/todos/:todo_id</pre></li>
+      </ul>
+    </p>
+    <h3>PUT & POST</h3>
+    <p>
+      <ul>
+        <li>PUT - Updates the specific todo to is_completed = true.</li>
+        <li>POST - Createds a new todo with the following attributes
+          <ul>
+            <li>title - "Name of the todo."</li>
+            <li>body - "Details of the todo"</li>
+          </ul>
+        </li>
+      </ul>
+    </p>
+    <h3>DELETE</h3>
+    <p>
+      DELETE - This will do a hard delete from the database.  Once removed,
+      the todo will no longer be available or recoverable.
+    </p>
+  </body>
+</html>
